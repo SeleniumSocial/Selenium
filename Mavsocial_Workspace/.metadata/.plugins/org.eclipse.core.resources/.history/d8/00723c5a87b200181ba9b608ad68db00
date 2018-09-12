@@ -1,0 +1,127 @@
+package Mavsocialpack;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+
+public class Login_scenarios 
+{
+  WebDriver driver;
+  @Test
+  public void login() 
+  {
+	//launch application
+	 driver.get("https://app.maventus.com/");
+	 System.out.println("Mavsocial application launched successfully");
+	 System.out.println("Scenario1 :- Testing login functionality by valid user name and valid password");
+	 System.out.println("--------------------------------------------------------------------------------");
+	 //Enter user name 
+	 driver.findElement(By.name("email")).sendKeys("haritest599@gmail.com");
+	 System.out.println("user name entered");
+	 //Enter password
+	 driver.findElement(By.name("pwd")).sendKeys("social@123");
+	 System.out.println("password entered");
+	 //click on log in button
+	 driver.findElement(By.xpath("//button[@type='submit']")).click();
+	 System.out.println("Trail user logged in successfully");
+	 //verify page title
+	 Assert.assertEquals(driver.getTitle(), "Social Media and Content Management Software | MavSocial");
+	 System.out.println("Page ttile verified");		 
+  }
+  @Test
+  public void logininvalidmail() throws Exception 
+  {
+	//launch application
+	 driver.get("https://app.maventus.com/");
+	 System.out.println("Mavsocial application launched successfully");
+	 System.out.println("Scenario2 :-Testing login functionality by invalid user name and valid password");
+	 System.out.println("--------------------------------------------------------------------------------");
+	 //Enter user name(invalid) 
+	 driver.findElement(By.name("email")).sendKeys("haritest599@gmil.com");
+	 System.out.println("user name entered");
+	 //Enter password(valid)
+	 driver.findElement(By.name("pwd")).sendKeys("social@123");
+	 System.out.println("password entered");
+	 //click on log in button
+	 driver.findElement(By.xpath("//button[@type='submit']")).click();
+	 Thread.sleep(4000);
+	 WebElement invalidmailid=driver.findElement(By.xpath("//html/body/div[2]/form[1]/div[1]/div/div"));
+	 System.out.println(invalidmailid.getText());
+	 Assert.assertEquals(invalidmailid.getText(), "This Email Id does not exist.");
+	 System.out.println("Trail user not logged in due to invalid email id");	 
+  }  
+  @Test
+  public void logininvalidpassword() throws Exception 
+  {
+	//launch application
+	 driver.get("https://app.maventus.com/");
+	 System.out.println("Mavsocial application launched successfully");
+	 System.out.println("Scenario3 :-Testing login functionality by valid user name and invalid password");
+	 System.out.println("--------------------------------------------------------------------------------");
+	 //Enter user name(valid) 
+	 driver.findElement(By.name("email")).sendKeys("haritest599@gmil.com");
+	 System.out.println("user name entered");
+	 //Enter password(invalid)
+	 driver.findElement(By.name("pwd")).sendKeys("socia@123");
+	 System.out.println("password entered");
+	 //click on log in button
+	 driver.findElement(By.xpath("//button[@type='submit']")).click();
+	 Thread.sleep(4000);
+	 WebElement invalidmailid=driver.findElement(By.xpath("//html/body/div[2]/form[1]/div[1]/div/div"));
+	 System.out.println(invalidmailid.getText());
+	 Assert.assertEquals(invalidmailid.getText(), "Wrong Email or Password");
+	 System.out.println("Trail user not logged in due to invalid password");	 
+  } 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @BeforeMethod
+  public void openbrowser() throws Exception 
+  {
+	 
+		System.setProperty("webdriver.chrome.driver", "I:\\hari\\Automation\\Workspaces\\Mavsocial_Workspace\\Lib\\chromedriver_win32\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		Thread.sleep(5000);
+  }
+
+  @AfterMethod
+  public void closebrowser() 
+  {
+	  driver.close();
+  }
+
+}

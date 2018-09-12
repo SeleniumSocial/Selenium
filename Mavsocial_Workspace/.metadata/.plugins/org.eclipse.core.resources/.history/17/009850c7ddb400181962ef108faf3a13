@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="tests">
+ 
+ 
+  <test name="Sanity in GC">
+  <parameter name="browser" value="GC"/>
+      <classes>
+         <class name="Mavsocialpack.Login_scenarios"/>
+        
+     </classes>
+  </test>
+
+ <test name="Sanity in FF">
+  <parameter name="browser" value="FF"/>
+      <classes>
+         <class name="Mavsocialpack.Login_scenarios"/>
+         </classes>
+  </test>
+        
+</suite>
+

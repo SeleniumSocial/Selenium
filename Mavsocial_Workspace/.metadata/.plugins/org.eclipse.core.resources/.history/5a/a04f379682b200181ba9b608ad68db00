@@ -1,0 +1,44 @@
+package Mavsocialpack;
+import static org.testng.Assert.assertTrue;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeMethod;
+
+public class Mavsocial_login 
+{
+ 
+	public static void main(String[] args) throws Exception
+	{
+		WebDriver driver;
+		System.setProperty("webdriver.chrome.driver", "I:\\hari\\Automation\\Workspaces\\Mavsocial_Workspace\\Lib\\chromedriver_win32\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		Thread.sleep(5000);
+		//launch application
+		driver.get("https://app.maventus.com/");
+		//Enter user name 
+		driver.findElement(By.name("email")).sendKeys("haritest599@gmail.com");
+		//Enter password
+		driver.findElement(By.name("pwd")).sendKeys("social@123");
+		//click on log in button
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		//verify page title
+		Assert.assertTrue(driver.getTitle(), "Social Media and Content Management Software | MavSocial");
+		driver.close();
+		
+		}
+			
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+

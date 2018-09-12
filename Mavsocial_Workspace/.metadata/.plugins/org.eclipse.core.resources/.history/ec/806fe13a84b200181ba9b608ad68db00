@@ -1,0 +1,33 @@
+package Mavsocialpack;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+
+public class Login_scenarios 
+{
+  WebDriver driver;
+  @Test
+  public void login1() 
+  {
+	  
+  }
+  @BeforeMethod
+  public void openbrowser() throws Exception 
+  {
+	 
+		System.setProperty("webdriver.chrome.driver", "I:\\hari\\Automation\\Workspaces\\Mavsocial_Workspace\\Lib\\chromedriver_win32\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		Thread.sleep(5000);
+  }
+
+  @AfterMethod
+  public void closebrowser() 
+  {
+	  
+  }
+
+}

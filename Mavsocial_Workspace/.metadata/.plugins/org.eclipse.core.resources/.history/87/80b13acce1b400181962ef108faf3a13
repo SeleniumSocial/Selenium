@@ -1,0 +1,35 @@
+package Mavsocialpack;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.*;
+
+public class BrowserAlert 
+{
+WebDriver driver;
+@Test(priority=0)
+public void loginIE()
+{
+System.setProperty("webdriver.ie.driver","I:\\hari\\Automation\\Workspaces\\Mavsocial_Workspace\\Lib\\IEDriverServer_x64_3.14.0\\IEDriverServer.exe");	
+driver=new InternetExplorerDriver();
+driver.get("http://dev.maventus.com");
+
+}
+@Test(priority=1)
+public void loginchrome()
+{
+	System.setProperty("webdriver.chrome.driver", "I:\\hari\\Automation\\Workspaces\\Mavsocial_Workspace\\Lib\\chromedriver_win32\\chromedriver.exe");
+	driver=new ChromeDriver();
+	driver.manage().window().maximize();
+	driver.get("http://dev.maventus.com");
+}
+@Test
+public void loginfirefox()
+{
+	System.setProperty("webdriver.chrome.driver", "I:\\hari\\Automation\\Workspaces\\Mavsocial_Workspace\\Lib\\chromedriver_win32\\chromedriver.exe");
+	driver=new ChromeDriver();
+	driver.manage().window().maximize();
+	driver.get("http://dev.maventus.com");
+}
+}

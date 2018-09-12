@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-09-10T13:55:31Z" name="Default suite" finished-at="2018-09-10T13:56:04Z" duration-ms="33578">
+    <groups>
+    </groups>
+    <test started-at="2018-09-10T13:55:31Z" name="Default test" finished-at="2018-09-10T13:56:04Z" duration-ms="33578">
+      <class name="Mavsocialpack.BrowserAlert">
+        <test-method signature="loginIE()[pri:0, instance:Mavsocialpack.BrowserAlert@63a12c68]" started-at="2018-09-10T13:55:31Z" name="loginIE" finished-at="2018-09-10T13:55:33Z" duration-ms="2676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIE -->
+        <test-method signature="loginchrome()[pri:1, instance:Mavsocialpack.BrowserAlert@63a12c68]" started-at="2018-09-10T13:55:33Z" name="loginchrome" finished-at="2018-09-10T13:55:38Z" duration-ms="4500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginchrome -->
+        <test-method signature="loginfirefox()[pri:3, instance:Mavsocialpack.BrowserAlert@63a12c68]" started-at="2018-09-10T13:55:38Z" name="loginfirefox" finished-at="2018-09-10T13:56:04Z" duration-ms="26382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginfirefox -->
+      </class> <!-- Mavsocialpack.BrowserAlert -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

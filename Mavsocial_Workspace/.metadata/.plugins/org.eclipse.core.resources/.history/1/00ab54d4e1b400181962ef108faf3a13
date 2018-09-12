@@ -1,0 +1,41 @@
+package Mavsocialpack;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.*;
+
+public class BrowserAlert 
+{
+WebDriver driver;
+@Test(priority=0)
+public void loginIE()
+{
+System.setProperty("webdriver.ie.driver","I:\\hari\\Automation\\Workspaces\\Mavsocial_Workspace\\Lib\\IEDriverServer_x64_3.14.0\\IEDriverServer.exe");	
+driver=new InternetExplorerDriver();
+driver.get("http://dev.maventus.com");
+
+}
+@Test(priority=1)
+public void loginchrome()
+{
+	System.setProperty("webdriver.chrome.driver", "I:\\hari\\Automation\\Workspaces\\Mavsocial_Workspace\\Lib\\chromedriver_win32\\chromedriver.exe");
+	driver=new ChromeDriver();
+	driver.manage().window().maximize();
+	driver.get("http://dev.maventus.com");
+}
+@Test(priority=3)
+public void loginfirefox() throws Exception
+{
+	System.setProperty("webdriver.gecko.driver", "I:\\hari\\Automation\\Workspaces\\Mavsocial_Workspace\\Lib\\geckodriver-v0.21.0-win64\\geckodriver.exe");
+    System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,"true");
+    System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"I:\\hari\\Logs\\log.txt");
+	driver=new FirefoxDriver();
+	driver.manage().window().maximize();
+	Thread.sleep(5000);
+	//launch application
+	driver.get("https://app.maventus.com/");
+	System.out.println("Mavsocial application launched successfully");	
+}
+}

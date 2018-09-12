@@ -1,0 +1,27 @@
+package Mavsocialpack;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.*;
+
+public class Mavsocial_login 
+{
+
+	WebDriver driver;
+	@BeforeMethod
+	public void testopenbrowser()
+	{
+		System.setProperty("webdriver.chrome.driver", "I:\\hari\\Automation\\Workspaces\\Mavsocial_Workspace\\Lib\\chromedriver_win32\\chromedriver.exe");
+		driver=new chromedriver();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

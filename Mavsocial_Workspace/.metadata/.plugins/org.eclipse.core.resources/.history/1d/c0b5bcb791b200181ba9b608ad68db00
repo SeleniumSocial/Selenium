@@ -1,0 +1,69 @@
+package Mavsocialpack;
+
+
+
+
+
+
+import java.util.logging.Level;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.logging.LogType;
+import org.openqa.selenium.logging.LoggingPreferences;
+import org.testng.Assert;
+
+public class Mavsocial_login 
+{
+ 
+	public static void main(String[] args) throws Exception
+	{
+		WebDriver driver;
+		//Launch chrome browser
+		System.setProperty("webdriver.chrome.driver", "I:\\hari\\Automation\\Workspaces\\Mavsocial_Workspace\\Lib\\chromedriver_win32\\chromedriver.exe");
+		//driver=new ChromeDriver();
+		//launch firefox browser
+		System.setProperty("webdriver.gecko.driver", "I:\\hari\\Automation\\Workspaces\\Mavsocial_Workspace\\Lib\\geckodriver-v0.21.0-win64\\geckodriver.exe");
+		LoggingPreferences pref = new LoggingPreferences();
+	    pref.enable(LogType.BROWSER, Level.OFF);
+	    pref.enable(LogType.CLIENT, Level.OFF);
+	    pref.enable(LogType.DRIVER, Level.OFF);
+	    pref.enable(LogType.PERFORMANCE, Level.OFF);
+	    pref.enable(LogType.PROFILER, Level.OFF);
+	    pref.enable(LogType.SERVER, Level.OFF);
+
+		driver=new FirefoxDriver();
+		driver.manage().window().maximize();
+		Thread.sleep(5000);
+		//launch application
+		driver.get("https://app.maventus.com/");
+		System.out.println("Mavsocial application launched successfully");
+		//Enter user name 
+		driver.findElement(By.name("email")).sendKeys("haritest599@gmail.com");
+		System.out.println("user name entered");
+		//Enter password
+		driver.findElement(By.name("pwd")).sendKeys("social@123");
+		System.out.println("password entered");
+		//click on log in button
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		System.out.println("Trail user logged in successfully");
+		//verify page title
+		Assert.assertEquals(driver.getTitle(), "Social Media and Content Management Software | MavSocial");
+		System.out.println("Page ttile verified");
+		driver.close();
+		
+		}
+			
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
