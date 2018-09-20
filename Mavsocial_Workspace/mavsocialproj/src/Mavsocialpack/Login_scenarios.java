@@ -29,7 +29,7 @@ public class Login_scenarios
 	 //Enter password
 	 driver.findElement(By.name("pwd")).sendKeys("social@123");
 	 System.out.println("password entered");
-	 //click on log in button
+	 //click on log in buttonl
 	 driver.findElement(By.xpath("//button[@type='submit']")).click();
 	 System.out.println("Trail user logged in successfully");
 	 //verify page title
@@ -39,7 +39,8 @@ public class Login_scenarios
 	 Actions a=new Actions(driver);
 	 Thread.sleep(4000);
 	 a.moveToElement(driver.findElement(By.xpath("//div[2]/div[3]/div/ul/li[7]/a"))).click(driver.findElement(By.xpath("//*[@id='header_notification_bar']/li[9]/a"))).build().perform();
-	//*[@id="mavsocial-body-welcome243"]/div[1]/div[2]/div/div[2]/div[3]/div/ul/li[7]/a
+	//*[@id='mavsocial-body-welcome243']/div[1]/div[2]/div/div[2]/div[3]/div/ul/li[7]/a
+	//*[@id="mavsocial-body-welcome243"]/div[1]/div[2]/div/div[2]/div[3]/div/ul/li[8]/a/i[2]
 	 Thread.sleep(4000);
 	 System.out.println("Trail user looged out successfully");
   }
