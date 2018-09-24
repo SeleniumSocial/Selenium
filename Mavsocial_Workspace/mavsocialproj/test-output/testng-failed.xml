@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Mavsocialpack.BrowserAlert">
+      <class name="Mavsocialpack.AdvannualtoPromonthly">
         <methods>
-          <include name="loginIE"/>
+          <include name="advannualtoPromonthly"/>
+          <include name="openbrowser"/>
         </methods>
-      </class> <!-- Mavsocialpack.BrowserAlert -->
+      </class> <!-- Mavsocialpack.AdvannualtoPromonthly -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

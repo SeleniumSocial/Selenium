@@ -40,6 +40,7 @@ public class Demo
 		 System.out.println("Page ttile verified");
 					
   }		
+	
 	 @Test(priority=0)
 	 public void freetoadvanceusertrail() throws Exception
 	 {
@@ -59,6 +60,7 @@ public class Demo
 		 Assert.assertEquals(currentplan.getText(), "live");
 		 
 		}
+	 
 		catch(Exception e)
 		{
 			SendMail mail=new SendMail();

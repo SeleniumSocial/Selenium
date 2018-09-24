@@ -9,6 +9,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -102,7 +103,7 @@ public class FreeUserToAdvance
 		 Thread.sleep(3000);
 		 System.out.println(togglem.getText());
 		 //check toggle button is monthly or not
-		softassert.assertEquals(togglem.getText(),"MONTHLY");
+		 softassert.assertEquals(togglem.getText(),"MONTHLY");
 		 System.out.println("Now toggle button is in monthly payment mode");
 		 //check monthly payment amount
 		 WebElement mamt=driver.findElement(By.xpath("//span[@class='ultra_price ultra_price_monthly']"));
@@ -169,7 +170,7 @@ public class FreeUserToAdvance
 		//Validate current plan -Advanced(trail).
 		 WebElement currentplan=driver.findElement(By.xpath("//div[3]/div[2]/div[3]/div/span"));
 		 System.out.println(currentplan.getText());
-		softassert.assertEquals(currentplan.getText(), "Current Plan - Advanced (monthly)");
+	 	softassert.assertEquals(currentplan.getText(), "Current Plan - Advanced (monthly)");
 		 System.out.println("The User is successfully converted his plan from Advanced-Trail user to advanced Monthly user ");
 		 
 		 }
@@ -249,30 +250,13 @@ public class FreeUserToAdvance
  
  }
 		 
+	@AfterClass
+	public void closebrowser()
+	{
+		driver.close();
+	}
 		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-	     
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
- }
+}
 
 
 

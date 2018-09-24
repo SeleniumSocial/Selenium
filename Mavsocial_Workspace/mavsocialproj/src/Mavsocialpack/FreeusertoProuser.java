@@ -82,7 +82,7 @@ public class FreeusertoProuser
 			 Thread.sleep(4000);
 			 uptopro.click();
 			 //Verify Pro plan subscription label is displayed or not
-			 softassert.assertEquals(driver.findElement(By.className(obj.getProperty("proplansub"))).getText(),"PRO PLAN SUBSCRIPTION");
+			 softassert.assertEquals(driver.findElement(By.xpath(obj.getProperty("proplansub"))).getText(),"PRO PLAN SUBSCRIPTION");
 			 System.out.println("PRO PLAN SUBSCRIPTION label displayed successfully");
 			//Verify Go back to advanced button is displayed or not
 			 WebElement gobckadv=driver.findElement(By.xpath(obj.getProperty("upgradetopro")));
@@ -93,7 +93,7 @@ public class FreeusertoProuser
 			 softassert.assertEquals(protrail.getText(),"Start My PRO Trial");
 			 System.out.println("Start My PRO Trial Button displayed successfully");
 			 protrail.click();
-			//validate the "Are you sure you wish to activate your Advanced trial?" pop up is displayed or not.
+			//validate the "Are you sure you wish to activate your Pro trial?" pop up is displayed or not.
 			 Thread.sleep(5000);
 			 driver.findElement(By.xpath("//div/div/div[2]/button[2]")).click();
 			 //html/body/div[5]/div/div/div[2]/button[2]
@@ -132,7 +132,7 @@ public class FreeusertoProuser
 		     FileInputStream objfile = new FileInputStream(System.getProperty("user.dir")+"\\objects.properties");									
 		     obj.load(objfile);
 		     //Verify Pro plan subscription label is displayed or not
-			 softassert.assertEquals(driver.findElement(By.className(obj.getProperty("proplansub"))).getText(),"PRO PLAN SUBSCRIPTION");
+			 softassert.assertEquals(driver.findElement(By.xpath(obj.getProperty("proplansub"))).getText(),"PRO PLAN SUBSCRIPTION");
 			 System.out.println("PRO PLAN SUBSCRIPTION label displayed successfully");
 			 
 			 //Check Monthly toggle is enable or not
@@ -198,7 +198,7 @@ public class FreeusertoProuser
 			 softassert.assertEquals(dash.getText(),"Dashboard");
 			 System.out.println("Dash board label verified successfully");
 			 System.out.println("User successfully Navigated to Dashbaord");
-			 System.out.println("Now Advance user is converted to Pro user monthly");
+			 System.out.println("Now Pro trail user is converted to Pro user monthly");
 	  }
 			 
 	  @Test(priority=2)
@@ -226,7 +226,7 @@ public class FreeusertoProuser
 			 Thread.sleep(4000);
 			 uptopro.click();
 			 //Verify Pro plan subscription label is displayed or not
-			 softassert.assertEquals(driver.findElement(By.className(obj.getProperty("proplansub"))).getText(),"PRO PLAN SUBSCRIPTION");
+			 softassert.assertEquals(driver.findElement(By.xpath(obj.getProperty("proplansub"))).getText(),"PRO PLAN SUBSCRIPTION");
 			 System.out.println("PRO PLAN SUBSCRIPTION label displayed successfully");
 			 //Verify Annual payment amount is $936 or not
 			 WebElement annualamt=driver.findElement(By.xpath(obj.getProperty("aamt")));
