@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="0" guice-stage="DEVELOPMENT" name="Failed suite [Parallel test suite]">
+  <listeners>
+    <listener class-name="com.mavSocial.customListner.Listner"/>
+  </listeners>
+  <test thread-count="0" name="LoginTest(failed)">
+    <classes>
+      <class name="com.mavSocial.LoginPage.TC003_ChangePassword">
+        <methods>
+          <include name="verify_change_password"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.mavSocial.LoginPage.TC003_ChangePassword -->
+      <class name="com.mavSocial.LoginPage.TC001_LoginWithValidCredentials">
+        <methods>
+          <include name="verify_login_with_valid_credentials"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.mavSocial.LoginPage.TC001_LoginWithValidCredentials -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [Parallel test suite] -->

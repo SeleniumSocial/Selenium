@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Parallel_test_suite">
+              <span class="suite-name border-failed">Parallel test suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Parallel_test_suite">
+                    <span>E:\Adithya\MavSocial\mavsocial.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Parallel_test_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Parallel_test_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Parallel_test_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Parallel_test_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Parallel_test_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Parallel_test_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods, 2 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Parallel_test_suite" class="hide-methods failed suite-Parallel_test_suite"> (hide)</a> <!-- hide-methods failed suite-Parallel_test_suite -->
+                      <a href="#" panel-name="suite-Parallel_test_suite" class="show-methods failed suite-Parallel_test_suite"> (show)</a> <!-- show-methods failed suite-Parallel_test_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Parallel_test_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Parallel_test_suite" title="com.mavSocial.LoginPage.TC003_ChangePassword" hash-for-method="verify_change_password">verify_change_password</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Parallel_test_suite" title="com.mavSocial.LoginPage.TC001_LoginWithValidCredentials" hash-for-method="verify_login_with_valid_credentials">verify_login_with_valid_credentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Parallel_test_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Parallel_test_suite" class="hide-methods passed suite-Parallel_test_suite"> (hide)</a> <!-- hide-methods passed suite-Parallel_test_suite -->
+                      <a href="#" panel-name="suite-Parallel_test_suite" class="show-methods passed suite-Parallel_test_suite"> (show)</a> <!-- show-methods passed suite-Parallel_test_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Parallel_test_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Parallel_test_suite" title="com.mavSocial.LoginPage.TC002_VerifyLoginWithInvalidCredentials" hash-for-method="verify_login_with_invalid_credentials(, 123456)">verify_login_with_invalid_credentials(, 123456)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Parallel_test_suite" title="com.mavSocial.LoginPage.TC002_VerifyLoginWithInvalidCredentials" hash-for-method="verify_login_with_invalid_credentials(TestData123@gmail.com, 123456)">verify_login_with_invalid_credentials(TestData123@gmail.com, 123456)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Parallel_test_suite" title="com.mavSocial.LoginPage.TC002_VerifyLoginWithInvalidCredentials" hash-for-method="verify_login_with_invalid_credentials(holla@yopmail.com, )">verify_login_with_invalid_credentials(holla@yopmail.com, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Parallel_test_suite" title="com.mavSocial.LoginPage.TC002_VerifyLoginWithInvalidCredentials" hash-for-method="verify_login_with_invalid_credentials(holly@yopmail.com, 123457)">verify_login_with_invalid_credentials(holly@yopmail.com, 123457)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Parallel_test_suite" title="com.mavSocial.LoginPage.TC002_VerifyLoginWithInvalidCredentials" hash-for-method="verify_login_with_invalid_credentials(holly@yopmail.com, )">verify_login_with_invalid_credentials(holly@yopmail.com, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Parallel_test_suite" title="com.mavSocial.LoginPage.TC002_VerifyLoginWithInvalidCredentials" hash-for-method="verify_login_with_invalid_credentials(, 123457)">verify_login_with_invalid_credentials(, 123457)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Parallel_test_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Parallel_test_suite" class="panel Parallel_test_suite">
+          <div class="suite-Parallel_test_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.mavSocial.LoginPage.TC003_ChangePassword</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_change_password">
+                  </a> <!-- verify_change_password -->
+                  <span class="method-name">verify_change_password</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;home&quot;. Current url: &quot;https://app.maventus.com/user/login&quot; (tried for 20 second(s) with 500 MILLISECONDS interval)
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DESKTOP-9AUK2PQ&apos;, ip: &apos;192.168.0.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50817}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\MANIAL~1\AppData\Local\Temp\scoped_dir4228_32076}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6490ad7fd63d2491626dcdb09cbbd25a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.mavSocial.testBase.TestBase.wait_until_url_contains(TestBase.java:265)
+	at com.mavSocial.LoginPage.TC003_ChangePassword.verify_change_password(TC003_ChangePassword.java:35)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_test_suite-class-failed -->
+          <div class="suite-Parallel_test_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.mavSocial.LoginPage.TC001_LoginWithValidCredentials</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_login_with_valid_credentials">
+                  </a> <!-- verify_login_with_valid_credentials -->
+                  <span class="method-name">verify_login_with_valid_credentials</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;home&quot;. Current url: &quot;https://app.maventus.com/user/login&quot; (tried for 20 second(s) with 500 MILLISECONDS interval)
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DESKTOP-9AUK2PQ&apos;, ip: &apos;192.168.0.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50852}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\MANIAL~1\AppData\Local\Temp\scoped_dir2228_16194}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 16cc892c695977fe3317e4e6ce003b3f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.mavSocial.testBase.TestBase.wait_until_url_contains(TestBase.java:265)
+	at com.mavSocial.LoginPage.TC001_LoginWithValidCredentials.verify_login_with_valid_credentials(TC001_LoginWithValidCredentials.java:39)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_test_suite-class-failed -->
+          <div class="suite-Parallel_test_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mavSocial.LoginPage.TC002_VerifyLoginWithInvalidCredentials</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_login_with_invalid_credentials(, 123456)">
+                  </a> <!-- verify_login_with_invalid_credentials(, 123456) -->
+                  <span class="method-name">verify_login_with_invalid_credentials</span>
+                  <span class="parameters">(, 123456)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_login_with_invalid_credentials(TestData123@gmail.com, 123456)">
+                  </a> <!-- verify_login_with_invalid_credentials(TestData123@gmail.com, 123456) -->
+                  <span class="method-name">verify_login_with_invalid_credentials</span>
+                  <span class="parameters">(TestData123@gmail.com, 123456)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_login_with_invalid_credentials(holla@yopmail.com, )">
+                  </a> <!-- verify_login_with_invalid_credentials(holla@yopmail.com, ) -->
+                  <span class="method-name">verify_login_with_invalid_credentials</span>
+                  <span class="parameters">(holla@yopmail.com, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_login_with_invalid_credentials(holly@yopmail.com, 123457)">
+                  </a> <!-- verify_login_with_invalid_credentials(holly@yopmail.com, 123457) -->
+                  <span class="method-name">verify_login_with_invalid_credentials</span>
+                  <span class="parameters">(holly@yopmail.com, 123457)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_login_with_invalid_credentials(holly@yopmail.com, )">
+                  </a> <!-- verify_login_with_invalid_credentials(holly@yopmail.com, ) -->
+                  <span class="method-name">verify_login_with_invalid_credentials</span>
+                  <span class="parameters">(holly@yopmail.com, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_login_with_invalid_credentials(, 123457)">
+                  </a> <!-- verify_login_with_invalid_credentials(, 123457) -->
+                  <span class="method-name">verify_login_with_invalid_credentials</span>
+                  <span class="parameters">(, 123457)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_test_suite-class-passed -->
+        </div> <!-- panel Parallel_test_suite -->
+        <div panel-name="test-xml-Parallel_test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\Adithya\MavSocial\mavsocial.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;0&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Parallel test suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.mavSocial.customListner.Listner&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;0&quot; name=&quot;LoginTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.mavSocial.LoginPage.TC001_LoginWithValidCredentials&quot;/&gt;
+      &lt;class name=&quot;com.mavSocial.LoginPage.TC002_VerifyLoginWithInvalidCredentials&quot;/&gt;
+      &lt;class name=&quot;com.mavSocial.LoginPage.TC003_ChangePassword&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginTest --&gt;
+&lt;/suite&gt; &lt;!-- Parallel test suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Parallel_test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Parallel test suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">LoginTest (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Parallel_test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Parallel test suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Parallel_test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Parallel test suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Parallel_test_suite');
+function tableData_Parallel_test_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verify_change_password')
+data.setCell(0, 2, 'com.mavSocial.LoginPage.TC003_ChangePassword')
+data.setCell(0, 3, 22375);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verify_login_with_valid_credentials')
+data.setCell(1, 2, 'com.mavSocial.LoginPage.TC001_LoginWithValidCredentials')
+data.setCell(1, 3, 21981);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verify_login_with_invalid_credentials')
+data.setCell(2, 2, 'com.mavSocial.LoginPage.TC002_VerifyLoginWithInvalidCredentials')
+data.setCell(2, 3, 3941);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verify_login_with_invalid_credentials')
+data.setCell(3, 2, 'com.mavSocial.LoginPage.TC002_VerifyLoginWithInvalidCredentials')
+data.setCell(3, 3, 3199);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verify_login_with_invalid_credentials')
+data.setCell(4, 2, 'com.mavSocial.LoginPage.TC002_VerifyLoginWithInvalidCredentials')
+data.setCell(4, 3, 3195);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verify_login_with_invalid_credentials')
+data.setCell(5, 2, 'com.mavSocial.LoginPage.TC002_VerifyLoginWithInvalidCredentials')
+data.setCell(5, 3, 3178);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verify_login_with_invalid_credentials')
+data.setCell(6, 2, 'com.mavSocial.LoginPage.TC002_VerifyLoginWithInvalidCredentials')
+data.setCell(6, 3, 2726);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verify_login_with_invalid_credentials')
+data.setCell(7, 2, 'com.mavSocial.LoginPage.TC002_VerifyLoginWithInvalidCredentials')
+data.setCell(7, 3, 2685);
+window.suiteTableData['Parallel_test_suite']= { tableData: data, tableDiv: 'times-div-Parallel_test_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Parallel_test_suite">
+              </div> <!-- times-div-Parallel_test_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Parallel_test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Parallel test suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verify_login_with_invalid_credentials(, 123456)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href='E:\Adithya\MavSocial\src\main\java\com\MavSocial\Success_Screenshots\verify_login_with_invalid_credentials_10_10_2018_03_26_04.png'><img src='E:\Adithya\MavSocial\src\main\java\com\MavSocial\Success_Screenshots\verify_login_with_invalid_credentials_10_10_2018_03_26_04.png'height='100'width='100'/></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verify_login_with_invalid_credentials(TestData123@gmail.com, 123456)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href='E:\Adithya\MavSocial\src\main\java\com\MavSocial\Success_Screenshots\verify_login_with_invalid_credentials_10_10_2018_03_25_55.png'><img src='E:\Adithya\MavSocial\src\main\java\com\MavSocial\Success_Screenshots\verify_login_with_invalid_credentials_10_10_2018_03_25_55.png'height='100'width='100'/></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verify_login_with_invalid_credentials(holla@yopmail.com, )</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href='E:\Adithya\MavSocial\src\main\java\com\MavSocial\Success_Screenshots\verify_login_with_invalid_credentials_10_10_2018_03_26_17.png'><img src='E:\Adithya\MavSocial\src\main\java\com\MavSocial\Success_Screenshots\verify_login_with_invalid_credentials_10_10_2018_03_26_17.png'height='100'width='100'/></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verify_login_with_invalid_credentials(holly@yopmail.com, 123457)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href='E:\Adithya\MavSocial\src\main\java\com\MavSocial\Success_Screenshots\verify_login_with_invalid_credentials_10_10_2018_03_26_00.png'><img src='E:\Adithya\MavSocial\src\main\java\com\MavSocial\Success_Screenshots\verify_login_with_invalid_credentials_10_10_2018_03_26_00.png'height='100'width='100'/></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verify_login_with_invalid_credentials(holly@yopmail.com, )</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href='E:\Adithya\MavSocial\src\main\java\com\MavSocial\Success_Screenshots\verify_login_with_invalid_credentials_10_10_2018_03_26_08.png'><img src='E:\Adithya\MavSocial\src\main\java\com\MavSocial\Success_Screenshots\verify_login_with_invalid_credentials_10_10_2018_03_26_08.png'height='100'width='100'/></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verify_login_with_invalid_credentials(, 123457)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href='E:\Adithya\MavSocial\src\main\java\com\MavSocial\Success_Screenshots\verify_login_with_invalid_credentials_10_10_2018_03_26_13.png'><img src='E:\Adithya\MavSocial\src\main\java\com\MavSocial\Success_Screenshots\verify_login_with_invalid_credentials_10_10_2018_03_26_13.png'height='100'width='100'/></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verify_login_with_valid_credentials</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href='E:\Adithya\MavSocial\src\main\java\com\MavSocial\Failure_Screenshots\verify_login_with_valid_credentials_10_10_2018_03_27_33.png'><img src='E:\Adithya\MavSocial\src\main\java\com\MavSocial\Failure_Screenshots\verify_login_with_valid_credentials_10_10_2018_03_27_33.png'height='100'width='100'/></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verify_change_password</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href='E:\Adithya\MavSocial\src\main\java\com\MavSocial\Failure_Screenshots\verify_change_password_10_10_2018_03_26_56.png'><img src='E:\Adithya\MavSocial\src\main\java\com\MavSocial\Failure_Screenshots\verify_change_password_10_10_2018_03_26_56.png'height='100'width='100'/></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Parallel_test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Parallel_test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mavSocial.LoginPage.TC002_VerifyLoginWithInvalidCredentials</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.mavSocial.LoginPage.TC002_VerifyLoginWithInvalidCredentials.verify_login_with_invali...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verify_login_with_invalid_credentials(TestData123@gmail.com, 123456)</span>
+                <span class="method-start">12 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verify_login_with_invalid_credentials status=SUCCESS method=TC002_VerifyLoginWithIn...)</span>
+                <span class="method-start">4767 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.mavSocial.LoginPage.TC002_VerifyLoginWithInvalidCredentials.verify_login_with_invali...)</span>
+                <span class="method-start">5454 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verify_login_with_invalid_credentials(holly@yopmail.com, 123457)</span>
+                <span class="method-start">5454 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verify_login_with_invalid_credentials status=SUCCESS method=TC002_VerifyLoginWithIn...)</span>
+                <span class="method-start">9361 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.mavSocial.LoginPage.TC002_VerifyLoginWithInvalidCredentials.verify_login_with_invali...)</span>
+                <span class="method-start">10037 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verify_login_with_invalid_credentials(, 123456)</span>
+                <span class="method-start">10037 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verify_login_with_invalid_credentials status=SUCCESS method=TC002_VerifyLoginWithIn...)</span>
+                <span class="method-start">13895 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.mavSocial.LoginPage.TC002_VerifyLoginWithInvalidCredentials.verify_login_with_invali...)</span>
+                <span class="method-start">14571 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verify_login_with_invalid_credentials(holly@yopmail.com, )</span>
+                <span class="method-start">14571 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verify_login_with_invalid_credentials status=SUCCESS method=TC002_VerifyLoginWithIn...)</span>
+                <span class="method-start">17987 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.mavSocial.LoginPage.TC002_VerifyLoginWithInvalidCredentials.verify_login_with_invali...)</span>
+                <span class="method-start">18662 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verify_login_with_invalid_credentials(, 123457)</span>
+                <span class="method-start">18662 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verify_login_with_invalid_credentials status=SUCCESS method=TC002_VerifyLoginWithIn...)</span>
+                <span class="method-start">22548 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.mavSocial.LoginPage.TC002_VerifyLoginWithInvalidCredentials.verify_login_with_invali...)</span>
+                <span class="method-start">23202 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verify_login_with_invalid_credentials(holla@yopmail.com, )</span>
+                <span class="method-start">23202 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verify_login_with_invalid_credentials status=SUCCESS method=TC002_VerifyLoginWithIn...)</span>
+                <span class="method-start">26587 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mavSocial.LoginPage.TC003_ChangePassword</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.mavSocial.LoginPage.TC003_ChangePassword.verify_change_password() throws java.lang.I...)</span>
+                <span class="method-start">27267 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_change_password</span>
+                <span class="method-start">42402 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mavSocial.LoginPage.TC001_LoginWithValidCredentials</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.mavSocial.LoginPage.TC001_LoginWithValidCredentials.verify_login_with_valid_credenti...)</span>
+                <span class="method-start">65565 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_login_with_valid_credentials</span>
+                <span class="method-start">80164 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verify_login_with_valid_credentials status=FAILURE method=TC001_LoginWithValidCrede...)</span>
+                <span class="method-start">102861 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mavSocial.LoginPage.TC002_VerifyLoginWithInvalidCredentials</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">driverClose</span>
+                <span class="method-start">105448 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

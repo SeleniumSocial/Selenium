@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel test suite" parallel="none" thread-count="0">
+<listeners>
+<listener class-name="com.mavSocial.customListner.Listner"></listener>
+</listeners>
+<test name="LoginTest">
+<classes>
+<class name="com.mavSocial.LoginPage.TC001_LoginWithValidCredentials"/>
+<class name="com.mavSocial.LoginPage.TC002_VerifyLoginWithInvalidCredentials"/>
+<class name="com.mavSocial.LoginPage.TC003_ChangePassword"/>  
+ </classes>
+</test>
+</suite>
